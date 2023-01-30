@@ -1,0 +1,5 @@
+/.env
+/media/images/*
+/venv
+/inventory/migrations/
+.idea
