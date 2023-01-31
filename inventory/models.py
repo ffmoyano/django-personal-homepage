@@ -12,6 +12,7 @@ class ProjectStatus(models.TextChoices):
 
 class Base(models.Model):
     abstract = True
+    id = models.IntegerField(primary_key=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=100, default='')
